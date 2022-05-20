@@ -1,0 +1,4 @@
+cargo run -p graph-node --release -- \
+  --postgres-url postgresql://[user]:[password]@localhost:5432/graph-node \
+  --ethereum-rpc testnet:https://api.s0.pops.one \
+  --ipfs 127.0.0.1:5001

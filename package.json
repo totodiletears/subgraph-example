@@ -1,0 +1,20 @@
+{
+  "name": "subgraph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "codegen": "graph codegen ./subgraph.yaml",
+    "create-local": "graph create --node http://localhost:8020/ totodiletears/subgraph-example",
+    "remove-local": "graph remove --node http://localhost:8020/ totodiletears/subgraph-example",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 totodiletears/subgraph-example"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "0.29.0",
+    "@graphprotocol/graph-ts": "^0.26.0",
+    "typescript": "^4.2.4"
+  }
+}

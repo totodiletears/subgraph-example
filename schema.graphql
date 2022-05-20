@@ -1,0 +1,6 @@
+type Message @entity {
+  id: ID!
+  sender: String!
+  message: String!
+  block: BigInt!
+}
